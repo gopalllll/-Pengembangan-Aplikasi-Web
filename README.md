@@ -8,7 +8,7 @@
 -	User mahasiswa bisa melihat ketersediaan lahan parkir
 -	User satpam bisa login untuk mengupdate ketersediaan lahan parkir
 # Struktur Data
-### Satpam
+### User (Satpam)
 Atribut|Tipe Data|Contoh
 ---|---|---
 id	| Integer(2) |	01
