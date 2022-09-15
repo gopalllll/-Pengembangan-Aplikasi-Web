@@ -16,7 +16,7 @@ Atribut|Tipe Data|Contoh
 id	| Integer(2) |	01
 name |	Char(35) |	Yayan Ruhiyan
 phonenumber |	Varchar(15) |	087805343899
-username |	Char(35) |	yanruh13
+username |	Varchar(35) |	yanruh13
 password |	Varchar(15) |	Paswotyayan6513
 ### Admin
 Atribut|Tipe Data|Contoh
