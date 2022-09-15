@@ -7,6 +7,8 @@
 # Use Case
 -	User mahasiswa bisa melihat ketersediaan lahan parkir
 -	User satpam bisa login untuk mengupdate ketersediaan lahan parkir
+- Admin bisa menambah, menghapus dan mengupdate User Satpam
+- Admin juga bisa mengupdate ketersediaan lahan parkir
 # Struktur Data
 ### User (Satpam)
 Atribut|Tipe Data|Contoh
