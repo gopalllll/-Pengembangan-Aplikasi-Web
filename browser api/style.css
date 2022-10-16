@@ -1,0 +1,28 @@
+body {
+    background-color: #eaeaea;
+}
+
+#demo-localstorage {
+    display: flex;
+    flex-direction: row;
+}
+
+#form-isian > form {
+    display: flex;
+    flex-direction: column;
+
+}
+
+#form-isian{
+    flex-grow: 1;
+    padding: 12px;
+}
+
+.table-output > table {
+    background-color:whitesmoke;
+    border-collapse: collapse;
+}
+.table-output {
+    flex-grow: 1;
+    padding: 10px;
+}

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Pertemuan 3</title>
+</head>
+<body>
+    <h2>Demo Document Selection, Event & Local Storage</h2>
+    <div id="demo-localstorage">
+        <div id="form-isian">
+            <form>
+                <input type="text" placeholder="Nama Mahasiswa" name="nama">
+                <input type="text" placeholder="NIM" name="nim">
+                <select name="" id="">
+                    <option value="IF">Teknik Informatika</option>
+                    <option value="TE">Teknik Elektro</option>
+                    <option value="FIS">Fisika</option>
+                    <option value="MAT">Matematika</option>
+                    <option value="KIM">KIMIA</option>
+                    <option value="BIO">Biologi</option>
+                    <option value="AGR">Agroteknologi</option>
+                </select>
+                <button id="tombol-submit" type="submit">Klik Untuk Submit</button>
+
+            </form>
+        </div>
+        <div class="table-output">
+            <table border="1px">
+                <thead>
+                    <tr>
+                        <th>No.</th>
+                        <th>NIM</th>
+                        <th>Nama</th>
+                        <th>Jurusan</th>
+                    </tr>
+                </thead>
+            </table>
+            <tbody></tbody>
+
+        </div>
+    </div>
+    <h2>Demo Fetch API</h2>
+    <div id="demo-fetch">
+
+    </div>
+    <script>
+        // 1. Ambil nilai Nama Mahasiswa, NIM, Jurusan dari Form
+        const elNama = document.getElementsByName("nama")[0];
+        const elNim = document.getElementsByName("nim")[0];
+        const elJurusan = document.getElementsByName("jurusan")[0];
+
+        const nama = elNama.value;
+        const nim = elNim.value;
+        const jurusan = elJurusan.value;
+
+        const barisTabel = {
+            nama: nama,
+            nim: nim,
+            jurusan: jurusan
+        };
+
+        console.log("baris tabel", barisTabel);
+
+        let arrayBarisTabel = [];
+
+        arrayBarisTabel.push(barisTabel);
+
+        console.log("array baris tabel", arrayBarisTabel);
+
+        const arrayBarisTabelString = JSON.stringify(arrayBarisTabel);
+
+        console.log("array baris tabel bentuk string", arrayBarisTabel);
+
+
+        //2. Buat Event, jika tombol di klik Submit, maka
+        const tombolsubmit = document.getElementById("tombol-submit");
+        
+        tombolsubmit.onclick = function(objekKejadian ){
+            objekKejadian.preventDefault();
+        }
+        
+        console.log(tombolsubmit)
+        //3. Data Disimpan di localstorage
+
+        localStorage.setItem("arrayBarisTabelString", arrayBarisTabelString);
+
+        //4. Tampilkan 
+        function isiTablefromLocalStorage() {
+            const elTable = document.querySelector("#table-output table tbody")
+        
+            elTbody.innerHTML 
+
+        }
+    </script>
+</body>
+</html>
