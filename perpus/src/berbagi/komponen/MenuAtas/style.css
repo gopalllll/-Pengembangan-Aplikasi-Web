@@ -1,0 +1,17 @@
+#menu-atas {
+  display: flex;
+  flex-direction: row;
+  align-items: center; 
+  padding: 8px;
+}
+
+#menu-atas h1{
+  flex-grow: 1;
+}
+
+#menu-atas .burger div {
+  margin-top: 2px;
+  height: 5px;
+  width: 20px;
+  background: yellow;
+}
